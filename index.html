@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe - User vs Computer or Two Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+    <div class="how-to-play">
+      <h2>How to Play:</h2>
+      <p>Take turns to place X or O on the grid. Your goal is to get three in a row before your opponent does!</p>
+      <p>In Single Player mode, choose between Easy (random moves) and Hard (strategic moves) difficulty for the computer.</p>
+      <p>Click "Restart Game" to start over at any time.</p>
+    </div>
+    <div class="settings">
+      <label for="gameModeSelect">Select Game Mode:</label>
+      <select id="gameModeSelect">
+        <option value="single">Single Player (User vs Computer)</option>
+        <option value="two-player">Two Player (User vs User)</option>
+      </select>
+    </div>
+    <div class="difficulty">
+      <label for="difficultySelect">Select Difficulty:</label>
+      <select id="difficultySelect">
+        <option value="easy">Easy</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+    <div class="game-board" id="board">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+    <button id="restartButton">Restart Game</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
